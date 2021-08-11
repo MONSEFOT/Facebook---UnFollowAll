@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+body {
+    width: 300px;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+}
+
+h1 {
+    width: 100%;
+}
+
+span.blue {
+    color: #1877F2;
+}
+
+span.red {
+    color: #C00101;
+}
+
+p {
+    font-size: 15px;
+    padding: 0 5%;
+    line-height: 2em;
+}
+
+
+div {
+  display: flex;
+  align-items: center;
+}
+
+div img {
+  width: 10%;
+  height: 10%;
+}
+
+div p {
+  color: rgb(156, 154, 154);
+}
+
+.button {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 50px;
+    border-radius: 15px;
+    background-color: #1877F2;
+    color: white;
+    border-color: black;
+}
+
+button {
+  border-radius: 15px;
+  position: relative;
+  background-color: #1877F2;
+  font-size: 20px;
+  font-weight: 600;
+  color: #FFFFFF;
+  padding: 10px 50px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  border-color: black;
+}
+
+
+button:after {
+  content: "";
+  background: #9cc1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -50px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
